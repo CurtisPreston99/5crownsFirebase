@@ -1,0 +1,7 @@
+<label>name</label>
+<input type="text" [(ngModel)]="Name" />
+
+<label>room number</label>
+<input type="number" [(ngModel)]="Room" >
+
+<button routerLink="/game/{{Room}}" fragment="{{Name}}">join</button>

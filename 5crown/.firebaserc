@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "crowns5": {
+      "hosting": {
+        "5crown": [
+          "crowns5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "crowns5"
+  }
+}

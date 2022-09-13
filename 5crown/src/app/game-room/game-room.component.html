@@ -1,0 +1,29 @@
+<div *ngIf="board">
+
+    <div class="table">
+        <app-card *ngIf="topOfDiscard" [card]="topOfDiscard" (click)="issueCommand(commands.PickUpFromDiscard)">
+        </app-card>
+        <app-card *ngIf="topOfDeck" [card]="topOfDeck" (click)="issueCommand(commands.PickUpFromDeck)"></app-card>
+    </div>
+
+    <div class="hand">
+        <div *ngFor="let c of player.hand">
+            <app-card [card]="c"></app-card>
+
+        </div>
+    </div>
+    <!-- 
+    <div *ngFor="let a of players">
+        {{a.name}}
+        <div *ngFor="let c of a.hand">
+            <app-card [card]="c"></app-card>
+
+        </div>
+
+    </div> -->
+
+</div>
+
+<button (click)="start()">
+    start
+</button>
